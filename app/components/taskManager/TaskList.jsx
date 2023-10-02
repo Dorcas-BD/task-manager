@@ -146,15 +146,12 @@ const TaskList = ({ taskFormVisible, setTaskFormVisible }) => {
               >
                 View Description
               </button>
-              <button
-                onClick={() => handleEditTask(task)}
-                className="delete-btn"
-              >
+              <button onClick={() => handleEditTask(task)} className="edit-btn">
                 Edit
               </button>
               <button
                 onClick={() => handleDeleteTask(index)}
-                className="edit-btn"
+                className="delete-btn"
               >
                 Delete
               </button>

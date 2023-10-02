@@ -5,6 +5,68 @@ body {
   background-color: #f0f0f0;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-container {
+    margin: 0 100px;
+  }
+}
+
+.hero-content {
+  background: rgba(255, 255, 252, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  color: #182022;
+}
+.home-hero-content {
+  background: rgba(255, 255, 252, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 450px;
+  height: 18vh;
+  color: #182022;
+}
+
+.hero-content h2,
+.home-hero-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hero-content p,
+.home-hero-content p {
+  font-size: 13px;
+}
+
+.login-btn,
+.add-home-btn {
+  padding: 10px 30px;
+  background-color: #182022;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.add-home-btn {
+  top: 20px;
+  position: relative;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -54,13 +116,13 @@ textarea:focus,
 select:focus {
   outline: none;
   border: none;
-  border: 1px solid #007bff;
+  border: 1px solid #182022;
 }
 
 .form-nav {
   display: flex;
   justify-content: space-between;
-  color: #043060;
+  color: #182022;
 }
 
 textarea {
@@ -85,12 +147,12 @@ span {
   justify-content: flex-end;
   cursor: pointer;
   font-size: 40px;
-  color: #043060;
+  color: #182022;
 }
 
 .form-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #182022;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -99,7 +161,7 @@ span {
 }
 
 .form-btn:hover {
-  background-color: #0056b3;
+  background-color: #0c1011;
 }
 
 .form-header {
@@ -107,25 +169,6 @@ span {
   font-weight: bold;
   margin-top: 10px;
 }
-
-/* Task List */
-/* .task-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: red;
-}
-
-.task-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: red;
-} */
 
 .task-list {
   list-style: none;
@@ -152,13 +195,13 @@ span {
 }
 
 .edit-btn {
-  color: #007bff;
+  color: #182022;
 }
 
 .add-btn {
   color: #fff;
   padding: 10px 25px;
-  background-color: #007bff;
+  background-color: #182022;
   margin: 10px;
 }
 
