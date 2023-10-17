@@ -35,8 +35,8 @@ const Navbar = () => {
   return (
     <div className="h-20 w-full border-b-2 flex item-center justify-between p-2 shadow-lg">
       <ul className="flex mt-3">
-        <li className="p-2 cursor-pointer">
-          <Link href="/">Home</Link>
+        <li className="p-2 cursor-pointer home">
+          <Link href="/">Task Manager</Link>
         </li>
         {!user ? null : (
           <li className="p-2 cursor-pointer">
@@ -45,8 +45,8 @@ const Navbar = () => {
         )}
       </ul>
       {loading ? null : !user ? (
-        <ul className="flex mt-3">
-          <li onClick={handleSignIn} className="p-2 cursor-pointer">
+        <ul className="flex mt-3 navbar">
+          <li onClick={handleSignIn} className="p-2 cursor-pointer ">
             Login
           </li>
           <li onClick={handleSignIn} className="p-2 cursor-pointer">

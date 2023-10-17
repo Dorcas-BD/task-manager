@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap");
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +7,25 @@ body {
   background-color: #f0f0f0;
 }
 
+.navbar {
+  color: #182022;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #182022;
+}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -42,12 +63,14 @@ body {
 .hero-content h2,
 .home-hero-content h2 {
   font-size: 24px;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
 }
 
 .hero-content p,
 .home-hero-content p {
   font-size: 13px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .login-btn,
@@ -58,6 +81,8 @@ body {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
   border-radius: 5px;
   margin-top: 15px;
 }
